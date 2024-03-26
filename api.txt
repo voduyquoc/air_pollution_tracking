@@ -1,0 +1,7 @@
+Your Api Key is Ready!
+Your key: 7dc3e416-2268-4fb5-9605-344766cfda06
+Expires on 3/23/2035
+
+https://github.com/ankurchavda/streamify/tree/main
+https://github.com/airscholar/e2e-data-engineering/tree/main
+https://docs.coincap.io/
