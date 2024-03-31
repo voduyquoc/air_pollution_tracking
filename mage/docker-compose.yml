@@ -21,15 +21,3 @@ services:
     volumes:
       - .:/home/src/
     restart: on-failure:5
-  postgres:
-    image: postgres:14
-    restart: on-failure
-    container_name: ${PROJECT_NAME}-postgres
-    env_file:
-      - .env
-    environment:
-      POSTGRES_DB: ${POSTGRES_DBNAME}
-      POSTGRES_USER: ${POSTGRES_USER}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-    ports:
-      - "${POSTGRES_PORT}:5432"
