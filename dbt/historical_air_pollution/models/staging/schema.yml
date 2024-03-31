@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: staging
+    database: ny-rides-quocvo
+    schema: air_pollution
+
+    tables:
+      - name: air_data_partitioned_clustered
+
+models:
+    - name: stg_air_pollution_data
