@@ -38,3 +38,5 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   historical_air_pollution:
 
+vars:
+  aqi_values: [1, 2, 3, 4, 5]
