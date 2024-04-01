@@ -4,7 +4,6 @@ if 'test' not in globals():
     from mage_ai.data_preparation.decorators import test
 import pandas as pd
 
-
 @transformer
 def transform(data, *args, **kwargs):
     """
@@ -34,8 +33,6 @@ def transform(data, *args, **kwargs):
                         'time': 'recorded_time'}
     data.rename(columns=new_column_names, inplace=True)
     data['recorded_time'] = pd.to_datetime(data['recorded_time'], unit='s')
-    data['recorded_time'] = data['recorded_time'].dt.tz_localize('UTC')
-    data['local_time'] = data['recorded_time'].dt.tz_convert('Europe/Berlin')
     print(data.info())
     return data
 

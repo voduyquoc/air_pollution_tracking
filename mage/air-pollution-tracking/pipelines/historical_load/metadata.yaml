@@ -69,7 +69,7 @@ settings:
 spark_config: {}
 tags: []
 type: python
-updated_at: '2024-03-31 21:53:39'
+updated_at: '2024-04-01 08:51:32'
 uuid: historical_load
 variables_dir: /home/src/mage_data/air-pollution-tracking
 widgets: []
