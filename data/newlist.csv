@@ -1,61 +1,81 @@
 ﻿City,State,Latitude,Longitude
- Berlin, Berlin,52.516667, 13.383333
- Hamburg, Hamburg,53.55, 10
- Munich (München), Bavaria,48.133333, 11.566667
- Cologne (Köln), North Rhine-Westphalia,50.933333, 6.95
- Frankfurt am Main, Hesse,50.116667, 8.683333
- Stuttgart, Baden-Württemberg,48.783333, 9.183333
- Düsseldorf, North Rhine-Westphalia,51.233333, 6.783333
- Leipzig, Saxony,51.333333, 12.383333
- Dortmund, North Rhine-Westphalia,51.516667, 7.466667
- Essen, North Rhine-Westphalia,51.45, 7.016667
- Bremen, Bremen,53.083333, 8.8
- Dresden, Saxony,51.033333, 13.733333
- Hanover (Hannover), Lower Saxony,52.366667, 9.716667
- Nuremberg (Nürnberg), Bavaria,49.45, 11.083333
- Duisburg, North Rhine-Westphalia,51.433333, 6.766667
- Bochum, North Rhine-Westphalia,51.483333, 7.216667
- Wuppertal, North Rhine-Westphalia,51.266667, 7.183333
- Bielefeld, North Rhine-Westphalia,52.016667, 8.533333
- Bonn, North Rhine-Westphalia,50.733333, 7.1
- Münster, North Rhine-Westphalia,51.966667, 7.633333
- Mannheim, Baden-Württemberg,49.483333, 8.466667
- Karlsruhe, Baden-Württemberg,49, 8.4
- Augsburg, Bavaria,48.366667, 10.9
- Wiesbaden, Hesse,50.083333, 8.233333
- Mönchengladbach, North Rhine-Westphalia,51.2, 6.433333
- Gelsenkirchen, North Rhine-Westphalia,51.516667, 7.1
- Aachen, North Rhine-Westphalia,50.783333, 6.083333
- Braunschweig, Lower Saxony,52.266667, 10.516667
- Kiel, Schleswig-Holstein,54.333333, 10.133333
- Chemnitz, Saxony,50.833333, 12.916667
- Halle (Saale), Saxony-Anhalt,51.483333, 11.966667
- Magdeburg, Saxony-Anhalt,52.133333, 11.616667
- Freiburg im Breisgau, Baden-Württemberg,47.983333, 7.85
- Krefeld, North Rhine-Westphalia,51.333333, 6.566667
- Mainz, Rhineland-Palatinate,50, 8.266667
- Lübeck, Schleswig-Holstein,53.866667, 10.683333
- Erfurt, Thuringia,50.983333, 11.033333
- Oberhausen, North Rhine-Westphalia,51.466667, 6.85
- Rostock, Mecklenburg-Vorpommern,54.083333, 12.133333
- Kassel, Hesse,51.316667, 9.5
- Hagen, North Rhine-Westphalia,51.366667, 7.483333
- Potsdam, Brandenburg,52.4, 13.066667
- Saarbrücken, Saarland,49.233333, 7
- Hamm, North Rhine-Westphalia,51.683333, 7.816667
- Ludwigshafen am Rhein, Rhineland-Palatinate,49.483333, 8.433333
- Mülheim an der Ruhr, North Rhine-Westphalia,51.433333, 6.883333
- Oldenburg, Lower Saxony,53.133333, 8.216667
- Osnabrück, Lower Saxony,52.283333, 8.05
- Leverkusen, North Rhine-Westphalia,51.033333, 6.983333
- Darmstadt, Hesse,49.866667, 8.65
- Heidelberg, Baden-Württemberg,49.416667, 8.716667
- Solingen, North Rhine-Westphalia,51.166667, 7.083333
- Herne, North Rhine-Westphalia,51.55, 7.216667
- Regensburg, Bavaria,49.016667, 12.083333
- Neuss, North Rhine-Westphalia,51.2, 6.7
- Paderborn, North Rhine-Westphalia,51.716667, 8.766667
- Ingolstadt, Bavaria,48.766667, 11.433333
- Offenbach am Main, Hesse,50.1, 8.8
- Fürth, Bavaria,49.466667, 11
- Ulm, Baden-Württemberg,48.4, 9.983333
+ Berlin, Berlin,52.516667,13.383333
+ Hamburg, Hamburg,53.55,10
+ Munich (München), Bavaria,48.133333,11.566667
+ Cologne (Köln), North Rhine-Westphalia,50.933333,6.95
+ Frankfurt am Main, Hesse,50.116667,8.683333
+ Stuttgart, Baden-Württemberg,48.783333,9.183333
+ Düsseldorf, North Rhine-Westphalia,51.233333,6.783333
+ Leipzig, Saxony,51.333333,12.383333
+ Dortmund, North Rhine-Westphalia,51.516667,7.466667
+ Essen, North Rhine-Westphalia,51.45,7.016667
+ Bremen, Bremen,53.083333,8.8
+ Dresden, Saxony,51.033333,13.733333
+ Hanover (Hannover), Lower Saxony,52.366667,9.716667
+ Nuremberg (Nürnberg), Bavaria,49.45,11.083333
+ Duisburg, North Rhine-Westphalia,51.433333,6.766667
+ Bochum, North Rhine-Westphalia,51.483333,7.216667
+ Wuppertal, North Rhine-Westphalia,51.266667,7.183333
+ Bielefeld, North Rhine-Westphalia,52.016667,8.533333
+ Bonn, North Rhine-Westphalia,50.733333,7.1
+ Münster, North Rhine-Westphalia,51.966667,7.633333
+ Mannheim, Baden-Württemberg,49.483333,8.466667
+ Karlsruhe, Baden-Württemberg,49,8.4
+ Augsburg, Bavaria,48.366667,10.9
+ Wiesbaden, Hesse,50.083333,8.233333
+ Mönchengladbach, North Rhine-Westphalia,51.2,6.433333
+ Gelsenkirchen, North Rhine-Westphalia,51.516667,7.1
+ Aachen, North Rhine-Westphalia,50.783333,6.083333
+ Braunschweig, Lower Saxony,52.266667,10.516667
+ Kiel, Schleswig-Holstein,54.333333,10.133333
+ Chemnitz, Saxony,50.833333,12.916667
+ Halle (Saale), Saxony-Anhalt,51.483333,11.966667
+ Magdeburg, Saxony-Anhalt,52.133333,11.616667
+ Freiburg im Breisgau, Baden-Württemberg,47.983333,7.85
+ Krefeld, North Rhine-Westphalia,51.333333,6.566667
+ Mainz, Rhineland-Palatinate,50,8.266667
+ Lübeck, Schleswig-Holstein,53.866667,10.683333
+ Erfurt, Thuringia,50.983333,11.033333
+ Oberhausen, North Rhine-Westphalia,51.466667,6.85
+ Rostock, Mecklenburg-Vorpommern,54.083333,12.133333
+ Kassel, Hesse,51.316667,9.5
+ Hagen, North Rhine-Westphalia,51.366667,7.483333
+ Potsdam, Brandenburg,52.4,13.066667
+ Saarbrücken, Saarland,49.233333,7
+ Hamm, North Rhine-Westphalia,51.683333,7.816667
+ Ludwigshafen am Rhein, Rhineland-Palatinate,49.483333,8.433333
+ Mülheim an der Ruhr, North Rhine-Westphalia,51.433333,6.883333
+ Oldenburg, Lower Saxony,53.133333,8.216667
+ Osnabrück, Lower Saxony,52.283333,8.05
+ Leverkusen, North Rhine-Westphalia,51.033333,6.983333
+ Darmstadt, Hesse,49.866667,8.65
+ Heidelberg, Baden-Württemberg,49.416667,8.716667
+ Solingen, North Rhine-Westphalia,51.166667,7.083333
+ Herne, North Rhine-Westphalia,51.55,7.216667
+ Regensburg, Bavaria,49.016667,12.083333
+ Neuss, North Rhine-Westphalia,51.2,6.7
+ Paderborn, North Rhine-Westphalia,51.716667,8.766667
+ Ingolstadt, Bavaria,48.766667,11.433333
+ Offenbach am Main, Hesse,50.1,8.8
+ Fürth, Bavaria,49.466667,11
+ Ulm, Baden-Württemberg,48.4,9.983333
+ Würzburg, Bavaria,49.783333,9.933333
+ Heilbronn, Baden-Württemberg,49.15,9.216667
+ Pforzheim, Baden-Württemberg,48.9,8.716667
+ Wolfsburg, Lower Saxony,52.423056,10.787222
+ Bottrop, North Rhine-Westphalia,51.524722,6.922778
+ Göttingen, Lower Saxony,51.533333,9.933333
+ Reutlingen, Baden-Württemberg,48.483333,9.216667
+ Koblenz, Rhineland-Palatinate,50.359722,7.597778
+ Erlangen, Bavaria,49.583333,11.016667
+ Bremerhaven, Bremen,53.55,8.583333
+ Remscheid, North Rhine-Westphalia,51.183333,7.2
+ Bergisch Gladbach, North Rhine-Westphalia,51.1,7.116667
+ Recklinghausen, North Rhine-Westphalia,51.585,7.161944
+ Trier, Rhineland-Palatinate,49.75,6.633333
+ Jena, Thuringia,50.927222,11.586111
+ Moers, North Rhine-Westphalia,51.459167,6.619722
+ Salzgitter, Lower Saxony,52.15,10.333333
+ Siegen, North Rhine-Westphalia,50.883333,8.016667
+ Gütersloh, North Rhine-Westphalia,51.9,8.383333
+ Hildesheim, Lower Saxony,52.15,9.95
