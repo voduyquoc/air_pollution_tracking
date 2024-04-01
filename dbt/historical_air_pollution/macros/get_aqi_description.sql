@@ -4,7 +4,7 @@
 
 {% macro get_aqi_description(aqi) -%}
 
-    case {{ dbt.safe_cast("aqi", api.Column.translate_type("integer")) }}  
+    case {{ dbt.safe_cast(aqi, api.Column.translate_type("integer")) }}  
         when 1 then 'Good'
         when 2 then 'Fair'
         when 3 then 'Moderate'
