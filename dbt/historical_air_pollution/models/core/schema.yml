@@ -1,0 +1,727 @@
+version: 2
+
+models:
+  - name: fact_air_pollution
+    description: ""
+    columns:
+      - name: recordid
+        data_type: string
+        description: ""
+
+      - name: latitude
+        data_type: float64
+        description: ""
+
+      - name: longitude
+        data_type: float64
+        description: ""
+
+      - name: recorded_city
+        data_type: string
+        description: ""
+
+      - name: recorded_state
+        data_type: string
+        description: ""
+
+      - name: recorded_country
+        data_type: string
+        description: ""
+
+      - name: recorded_time
+        data_type: timestamp
+        description: ""
+
+      - name: carbon_monoxide_co
+        data_type: float64
+        description: ""
+
+      - name: nitrogen_monoxide_no
+        data_type: float64
+        description: ""
+
+      - name: nitrogen_dioxide_no2
+        data_type: float64
+        description: ""
+
+      - name: ozone_o3
+        data_type: float64
+        description: ""
+
+      - name: sulphur_dioxide_so2
+        data_type: float64
+        description: ""
+
+      - name: fine_particles_matter_pm2_5
+        data_type: float64
+        description: ""
+
+      - name: coarse_particulate_matter_pm10
+        data_type: float64
+        description: ""
+
+      - name: ammonia_nh3
+        data_type: float64
+        description: ""
+
+  - name: daily_subindex
+    description: ""
+    columns:
+      - name: country
+        data_type: string
+        description: ""
+
+      - name: state
+        data_type: string
+        description: ""
+
+      - name: city
+        data_type: string
+        description: ""
+
+      - name: time_day
+        data_type: timestamp
+        description: ""
+
+      - name: daily_co
+        data_type: float64
+        description: ""
+
+      - name: daily_no
+        data_type: float64
+        description: ""
+
+      - name: daily_no2
+        data_type: float64
+        description: ""
+
+      - name: daily_o3
+        data_type: float64
+        description: ""
+
+      - name: daily_so2
+        data_type: float64
+        description: ""
+
+      - name: daily_pm2_5
+        data_type: float64
+        description: ""
+
+      - name: daily_pm10
+        data_type: float64
+        description: ""
+
+      - name: daily_nh3
+        data_type: float64
+        description: ""
+
+  - name: monthly_aqi_cal
+    description: ""
+    columns:
+      - name: country
+        data_type: string
+        description: ""
+
+      - name: state
+        data_type: string
+        description: ""
+
+      - name: city
+        data_type: string
+        description: ""
+
+      - name: time_month
+        data_type: timestamp
+        description: ""
+
+      - name: monthly_co
+        data_type: float64
+        description: ""
+
+      - name: monthly_no
+        data_type: float64
+        description: ""
+
+      - name: monthly_no2
+        data_type: float64
+        description: ""
+
+      - name: monthly_o3
+        data_type: float64
+        description: ""
+
+      - name: monthly_so2
+        data_type: float64
+        description: ""
+
+      - name: monthly_pm2_5
+        data_type: float64
+        description: ""
+
+      - name: monthly_pm10
+        data_type: float64
+        description: ""
+
+      - name: monthly_nh3
+        data_type: float64
+        description: ""
+
+      - name: monthly_so2_sub
+        data_type: int64
+        description: ""
+
+      - name: monthly_no2_sub
+        data_type: int64
+        description: ""
+
+      - name: monthly_pm10_sub
+        data_type: int64
+        description: ""
+
+      - name: monthly_pm2_5_sub
+        data_type: int64
+        description: ""
+
+      - name: monthly_o3_sub
+        data_type: int64
+        description: ""
+
+      - name: monthly_co_sub
+        data_type: int64
+        description: ""
+
+      - name: monthly_aqi
+        data_type: int64
+        description: ""
+
+  - name: hourly_subindex
+    description: ""
+    columns:
+      - name: country
+        data_type: string
+        description: ""
+
+      - name: state
+        data_type: string
+        description: ""
+
+      - name: city
+        data_type: string
+        description: ""
+
+      - name: time_hour
+        data_type: timestamp
+        description: ""
+
+      - name: hourly_co
+        data_type: float64
+        description: ""
+
+      - name: hourly_no
+        data_type: float64
+        description: ""
+
+      - name: hourly_no2
+        data_type: float64
+        description: ""
+
+      - name: hourly_o3
+        data_type: float64
+        description: ""
+
+      - name: hourly_so2
+        data_type: float64
+        description: ""
+
+      - name: hourly_pm2_5
+        data_type: float64
+        description: ""
+
+      - name: hourly_pm10
+        data_type: float64
+        description: ""
+
+      - name: hourly_nh3
+        data_type: float64
+        description: ""
+
+  - name: hourly_aqi_cal
+    description: ""
+    columns:
+      - name: country
+        data_type: string
+        description: ""
+
+      - name: state
+        data_type: string
+        description: ""
+
+      - name: city
+        data_type: string
+        description: ""
+
+      - name: time_hour
+        data_type: timestamp
+        description: ""
+
+      - name: hourly_co
+        data_type: float64
+        description: ""
+
+      - name: hourly_no
+        data_type: float64
+        description: ""
+
+      - name: hourly_no2
+        data_type: float64
+        description: ""
+
+      - name: hourly_o3
+        data_type: float64
+        description: ""
+
+      - name: hourly_so2
+        data_type: float64
+        description: ""
+
+      - name: hourly_pm2_5
+        data_type: float64
+        description: ""
+
+      - name: hourly_pm10
+        data_type: float64
+        description: ""
+
+      - name: hourly_nh3
+        data_type: float64
+        description: ""
+
+      - name: hourly_so2_sub
+        data_type: int64
+        description: ""
+
+      - name: hourly_no2_sub
+        data_type: int64
+        description: ""
+
+      - name: hourly_pm10_sub
+        data_type: int64
+        description: ""
+
+      - name: hourly_pm2_5_sub
+        data_type: int64
+        description: ""
+
+      - name: hourly_o3_sub
+        data_type: int64
+        description: ""
+
+      - name: hourly_co_sub
+        data_type: int64
+        description: ""
+
+      - name: hourly_aqi
+        data_type: int64
+        description: ""
+
+  - name: monthly_subindex
+    description: ""
+    columns:
+      - name: country
+        data_type: string
+        description: ""
+
+      - name: state
+        data_type: string
+        description: ""
+
+      - name: city
+        data_type: string
+        description: ""
+
+      - name: time_month
+        data_type: timestamp
+        description: ""
+
+      - name: monthly_co
+        data_type: float64
+        description: ""
+
+      - name: monthly_no
+        data_type: float64
+        description: ""
+
+      - name: monthly_no2
+        data_type: float64
+        description: ""
+
+      - name: monthly_o3
+        data_type: float64
+        description: ""
+
+      - name: monthly_so2
+        data_type: float64
+        description: ""
+
+      - name: monthly_pm2_5
+        data_type: float64
+        description: ""
+
+      - name: monthly_pm10
+        data_type: float64
+        description: ""
+
+      - name: monthly_nh3
+        data_type: float64
+        description: ""
+
+  - name: daily_aqi_cal
+    description: ""
+    columns:
+      - name: country
+        data_type: string
+        description: ""
+
+      - name: state
+        data_type: string
+        description: ""
+
+      - name: city
+        data_type: string
+        description: ""
+
+      - name: time_day
+        data_type: timestamp
+        description: ""
+
+      - name: daily_co
+        data_type: float64
+        description: ""
+
+      - name: daily_no
+        data_type: float64
+        description: ""
+
+      - name: daily_no2
+        data_type: float64
+        description: ""
+
+      - name: daily_o3
+        data_type: float64
+        description: ""
+
+      - name: daily_so2
+        data_type: float64
+        description: ""
+
+      - name: daily_pm2_5
+        data_type: float64
+        description: ""
+
+      - name: daily_pm10
+        data_type: float64
+        description: ""
+
+      - name: daily_nh3
+        data_type: float64
+        description: ""
+
+      - name: daily_so2_sub
+        data_type: int64
+        description: ""
+
+      - name: daily_no2_sub
+        data_type: int64
+        description: ""
+
+      - name: daily_pm10_sub
+        data_type: int64
+        description: ""
+
+      - name: daily_pm2_5_sub
+        data_type: int64
+        description: ""
+
+      - name: daily_o3_sub
+        data_type: int64
+        description: ""
+
+      - name: daily_co_sub
+        data_type: int64
+        description: ""
+
+      - name: daily_aqi
+        data_type: int64
+        description: ""
+
+  - name: monthly_aqi
+    description: ""
+    columns:
+      - name: country
+        data_type: string
+        description: ""
+
+      - name: state
+        data_type: string
+        description: ""
+
+      - name: city
+        data_type: string
+        description: ""
+
+      - name: time_month
+        data_type: timestamp
+        description: ""
+
+      - name: monthly_co
+        data_type: float64
+        description: ""
+
+      - name: monthly_no
+        data_type: float64
+        description: ""
+
+      - name: monthly_no2
+        data_type: float64
+        description: ""
+
+      - name: monthly_o3
+        data_type: float64
+        description: ""
+
+      - name: monthly_so2
+        data_type: float64
+        description: ""
+
+      - name: monthly_pm2_5
+        data_type: float64
+        description: ""
+
+      - name: monthly_pm10
+        data_type: float64
+        description: ""
+
+      - name: monthly_nh3
+        data_type: float64
+        description: ""
+
+      - name: monthly_so2_sub
+        data_type: int64
+        description: ""
+
+      - name: monthly_no2_sub
+        data_type: int64
+        description: ""
+
+      - name: monthly_pm10_sub
+        data_type: int64
+        description: ""
+
+      - name: monthly_pm2_5_sub
+        data_type: int64
+        description: ""
+
+      - name: monthly_o3_sub
+        data_type: int64
+        description: ""
+
+      - name: monthly_co_sub
+        data_type: int64
+        description: ""
+
+      - name: monthly_aqi
+        data_type: int64
+        description: ""
+
+      - name: monthly_aqi_description
+        data_type: string
+        description: ""
+
+  - name: dim_locations
+    description: ""
+    columns:
+      - name: latitude
+        data_type: float64
+        description: ""
+
+      - name: longitude
+        data_type: float64
+        description: ""
+
+      - name: city
+        data_type: string
+        description: ""
+
+      - name: state
+        data_type: string
+        description: ""
+
+      - name: country
+        data_type: string
+        description: ""
+
+  - name: daily_aqi
+    description: ""
+    columns:
+      - name: country
+        data_type: string
+        description: ""
+
+      - name: state
+        data_type: string
+        description: ""
+
+      - name: city
+        data_type: string
+        description: ""
+
+      - name: time_day
+        data_type: timestamp
+        description: ""
+
+      - name: daily_co
+        data_type: float64
+        description: ""
+
+      - name: daily_no
+        data_type: float64
+        description: ""
+
+      - name: daily_no2
+        data_type: float64
+        description: ""
+
+      - name: daily_o3
+        data_type: float64
+        description: ""
+
+      - name: daily_so2
+        data_type: float64
+        description: ""
+
+      - name: daily_pm2_5
+        data_type: float64
+        description: ""
+
+      - name: daily_pm10
+        data_type: float64
+        description: ""
+
+      - name: daily_nh3
+        data_type: float64
+        description: ""
+
+      - name: daily_so2_sub
+        data_type: int64
+        description: ""
+
+      - name: daily_no2_sub
+        data_type: int64
+        description: ""
+
+      - name: daily_pm10_sub
+        data_type: int64
+        description: ""
+
+      - name: daily_pm2_5_sub
+        data_type: int64
+        description: ""
+
+      - name: daily_o3_sub
+        data_type: int64
+        description: ""
+
+      - name: daily_co_sub
+        data_type: int64
+        description: ""
+
+      - name: daily_aqi
+        data_type: int64
+        description: ""
+
+      - name: daily_aqi_description
+        data_type: string
+        description: ""
+
+  - name: hourly_aqi
+    description: ""
+    columns:
+      - name: country
+        data_type: string
+        description: ""
+
+      - name: state
+        data_type: string
+        description: ""
+
+      - name: city
+        data_type: string
+        description: ""
+
+      - name: time_hour
+        data_type: timestamp
+        description: ""
+
+      - name: hourly_co
+        data_type: float64
+        description: ""
+
+      - name: hourly_no
+        data_type: float64
+        description: ""
+
+      - name: hourly_no2
+        data_type: float64
+        description: ""
+
+      - name: hourly_o3
+        data_type: float64
+        description: ""
+
+      - name: hourly_so2
+        data_type: float64
+        description: ""
+
+      - name: hourly_pm2_5
+        data_type: float64
+        description: ""
+
+      - name: hourly_pm10
+        data_type: float64
+        description: ""
+
+      - name: hourly_nh3
+        data_type: float64
+        description: ""
+
+      - name: hourly_so2_sub
+        data_type: int64
+        description: ""
+
+      - name: hourly_no2_sub
+        data_type: int64
+        description: ""
+
+      - name: hourly_pm10_sub
+        data_type: int64
+        description: ""
+
+      - name: hourly_pm2_5_sub
+        data_type: int64
+        description: ""
+
+      - name: hourly_o3_sub
+        data_type: int64
+        description: ""
+
+      - name: hourly_co_sub
+        data_type: int64
+        description: ""
+
+      - name: hourly_aqi
+        data_type: int64
+        description: ""
+
+      - name: hourly_aqi_description
+        data_type: string
+        description: ""
