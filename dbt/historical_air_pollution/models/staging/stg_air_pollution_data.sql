@@ -23,14 +23,14 @@ select
     -- air info
     {{ dbt.safe_cast("aqi", api.Column.translate_type("integer")) }} as aqi,
     {{ get_aqi_description("aqi") }} as aqi_description,
-    {{ dbt.safe_cast("co", api.Column.translate_type("float")) }} as co,
-    {{ dbt.safe_cast("no", api.Column.translate_type("float")) }} as "no",
-    {{ dbt.safe_cast("no2", api.Column.translate_type("float")) }} as no2,
-    {{ dbt.safe_cast("o3", api.Column.translate_type("float")) }} as o3,
-    {{ dbt.safe_cast("so2", api.Column.translate_type("float")) }} as so2,
-    {{ dbt.safe_cast("pm2_5", api.Column.translate_type("float")) }} as pm2_5,
-    {{ dbt.safe_cast("pm10", api.Column.translate_type("float")) }} as pm10,
-    {{ dbt.safe_cast("nh3", api.Column.translate_type("float")) }} as nh3,
+    {{ dbt.safe_cast("carbon_monoxide_co", api.Column.translate_type("float")) }} as carbon_monoxide_co,
+    {{ dbt.safe_cast("nitrogen_monoxide_no", api.Column.translate_type("float")) }} as nitrogen_monoxide_no,
+    {{ dbt.safe_cast("nitrogen_dioxide_no2", api.Column.translate_type("float")) }} as nitrogen_dioxide_no2,
+    {{ dbt.safe_cast("ozone_o3", api.Column.translate_type("float")) }} as ozone_o3,
+    {{ dbt.safe_cast("sulphur_dioxide_so2", api.Column.translate_type("float")) }} as sulphur_dioxide_so2,
+    {{ dbt.safe_cast("fine_particles_matter_pm2_5", api.Column.translate_type("float")) }} as fine_particles_matter_pm2_5,
+    {{ dbt.safe_cast("coarse_particulate_matter_pm10", api.Column.translate_type("float")) }} as coarse_particulate_matter_pm10,
+    {{ dbt.safe_cast("ammonia_nh3", api.Column.translate_type("float")) }} as ammonia_nh3,
 from airdata
 where rn = 1
 
