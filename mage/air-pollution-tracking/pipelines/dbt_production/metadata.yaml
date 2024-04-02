@@ -2,37 +2,39 @@ blocks:
 - all_upstream_blocks_executed: true
   color: null
   configuration:
-    data_provider: bigquery
-    data_provider_profile: default
-    dbt: {}
+    dbt:
+      command: build
+    dbt_profile_target: prod
+    dbt_project_name: dbt/historical_air_pollution
     disable_query_preprocessing: false
     export_write_policy: append
-    limit: 1000
-    use_raw_sql: true
+    file_source:
+      path: dbts/dbt_build_prod.yaml
+    use_raw_sql: false
   downstream_blocks: []
   executor_config: null
   executor_type: local_python
   has_callback: false
-  language: sql
-  name: test-big-query
+  language: yaml
+  name: dbt_build_prod
   retry_config: null
   status: executed
   timeout: null
-  type: data_loader
+  type: dbt
   upstream_blocks: []
-  uuid: test_big_query
+  uuid: dbt_build_prod
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
 conditionals: []
-created_at: '2024-03-31 12:55:50.885376+00:00'
+created_at: '2024-04-02 11:22:34.505795+00:00'
 data_integration: null
 description: null
 executor_config: {}
 executor_count: 1
 executor_type: null
 extensions: {}
-name: test
+name: dbt_production
 notification_config: {}
 remote_variables_dir: null
 retry_config: {}
@@ -42,7 +44,7 @@ settings:
 spark_config: {}
 tags: []
 type: python
-updated_at: '2024-03-31 13:00:15'
-uuid: test
+updated_at: '2024-04-02 11:34:57'
+uuid: dbt_production
 variables_dir: /home/src/mage_data/air-pollution-tracking
 widgets: []

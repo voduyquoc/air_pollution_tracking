@@ -1,0 +1,89 @@
+version: 2
+
+sources:
+  - name: staging
+    database: ny-rides-quocvo
+    schema: air_pollution
+
+    tables:
+      - name: air_data_partitioned_clustered
+
+models:
+  - name: stg_air_pollution_data
+    description: ""
+    columns:
+      - name: recordid
+        data_type: string
+        description: ""
+        tests:
+            - unique:
+                severity: warn
+            - not_null:
+                severity: warn
+
+      - name: latitude
+        data_type: float64
+        description: ""
+        tests:
+            - relationships:
+                to: ref('location_lookup')
+                field: Latitude
+                severity: warn
+
+      - name: longitude
+        data_type: float64
+        description: ""
+        tests:
+            - relationships:
+                to: ref('location_lookup')
+                field: Longitude
+                severity: warn
+
+      - name: recorded_time
+        data_type: timestamp
+        description: ""
+
+      - name: aqi
+        data_type: int64
+        description: ""
+        tests: 
+            - accepted_values:
+                values: "{{ var('aqi_values') }}"
+                severity: warn
+                quote: false
+
+      - name: aqi_description
+        data_type: string
+        description: ""
+
+      - name: carbon_monoxide_co
+        data_type: float64
+        description: ""
+
+      - name: nitrogen_monoxide_no
+        data_type: float64
+        description: ""
+
+      - name: nitrogen_dioxide_no2
+        data_type: float64
+        description: ""
+
+      - name: ozone_o3
+        data_type: float64
+        description: ""
+
+      - name: sulphur_dioxide_so2
+        data_type: float64
+        description: ""
+
+      - name: fine_particles_matter_pm2_5
+        data_type: float64
+        description: ""
+
+      - name: coarse_particulate_matter_pm10
+        data_type: float64
+        description: ""
+
+      - name: ammonia_nh3
+        data_type: float64
+        description: ""

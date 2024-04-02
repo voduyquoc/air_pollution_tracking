@@ -1,0 +1,25 @@
+air_pollution_tracking:
+  target: prod
+  outputs:
+    dev:
+      dataset: dbt_air_pollution
+      fixed_retries: 1
+      keyfile: .google/credentials/google_credentials.json
+      location: US
+      method: service-account
+      priority: interactive
+      project: ny-rides-quocvo
+      threads: 4
+      timeout_seconds: 300
+      type: bigquery
+    prod:
+      dataset: prod
+      fixed_retries: 1
+      keyfile: .google/credentials/google_credentials.json
+      location: US
+      method: service-account
+      priority: interactive
+      project: ny-rides-quocvo
+      threads: 4
+      timeout_seconds: 300
+      type: bigquery
