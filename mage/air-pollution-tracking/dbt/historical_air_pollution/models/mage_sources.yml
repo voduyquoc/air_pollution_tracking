@@ -1,0 +1,21 @@
+sources:
+- description: Dataframes Mage upstream blocks
+  loader: mage
+  name: mage_historical_air_pollution
+  schema: prod
+  tables:
+  - description: Dataframe for block `air_to_bigquery_partitioned_clustered` of the
+      `historical_load` mage pipeline.
+    identifier: mage_historical_load_air_to_bigquery_partitioned_clustered
+    meta:
+      block_uuid: air_to_bigquery_partitioned_clustered
+      pipeline_uuid: historical_load
+    name: historical_load_air_to_bigquery_partitioned_clustered
+  - description: Dataframe for block `air_to_bigquery_partitioned_clustered` of the
+      `from_api_to_final_bigquery` mage pipeline.
+    identifier: mage_from_api_to_final_bigquery_air_to_bigquery_partitioned_clustered
+    meta:
+      block_uuid: air_to_bigquery_partitioned_clustered
+      pipeline_uuid: from_api_to_final_bigquery
+    name: from_api_to_final_bigquery_air_to_bigquery_partitioned_clustered
+version: 2

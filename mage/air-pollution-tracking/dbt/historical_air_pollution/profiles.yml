@@ -11,3 +11,4 @@ historical_air_pollution:
       threads: 4
       timeout_seconds: 300
       type: bigquery
+  target: prod
