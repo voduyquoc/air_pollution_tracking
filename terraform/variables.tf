@@ -33,11 +33,6 @@ variable "gcs_storage_class" {
   default     = "STANDARD"
 }
 
-variable "stg_bq_dataset" {
-  description = "The name of your dbt development dataset"
-  default     = "dbt_air_pollution"
-}
-
 variable "prod_bq_dataset" {
   description = "The name of your dbt production dataset"
   default     = "prod"

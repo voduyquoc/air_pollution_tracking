@@ -6,7 +6,10 @@ if 'data_loader' not in globals():
     from mage_ai.data_preparation.decorators import data_loader
 if 'test' not in globals():
     from mage_ai.data_preparation.decorators import test
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
 @data_loader
 def load_from_google_cloud_storage(*args, **kwargs):
@@ -19,7 +22,7 @@ def load_from_google_cloud_storage(*args, **kwargs):
     config_path = path.join(get_repo_path(), 'io_config.yaml')
     config_profile = 'default'
 
-    bucket_name = 'air-pollution-tracking'
+    bucket_name = os.getenv("BUCKET_NAME")
     object_key = 'air_pollution_data.parquet'
 
     return GoogleCloudStorage.with_config(ConfigFileLoader(config_path, config_profile)).load(

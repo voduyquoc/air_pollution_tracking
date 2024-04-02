@@ -20,4 +20,5 @@ services:
       - 6789:6789
     volumes:
       - .:/home/src/
+      - ~/.gc/google_credentials.json:/home/src/google_credentials.json
     restart: on-failure:5
