@@ -42,3 +42,7 @@ cd air_pollution_tracking/terraform
   ```
 
 **Note:** The infrastructure was setup a tad generously, you might not actually be fully utilizing the compute power. Feel free to reduce the instance sizes and test.
+
+
+
+#### [Installation Reference - Ankur Chavda](https://github.com/ankurchavda/streamify/blob/main/setup/terraform.md)

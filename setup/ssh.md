@@ -29,3 +29,6 @@
 
 - You will have to forward ports from your VM to your local machine for you to be able to see Mage UI. Check how to do that [here](https://youtu.be/ae-CV2KfoN0?t=1074)
 
+
+
+#### [Installation Reference - Ankur Chavda](https://github.com/ankurchavda/streamify/blob/main/setup/ssh.md)

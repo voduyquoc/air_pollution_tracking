@@ -144,3 +144,7 @@ Finally, we have `prod` dataset in Google BigQuery to prepare dashboards.
 [Link to the dashboard](https://lookerstudio.google.com/s/jOxSt_QiToY)
 
 ![img](../images/dashboard.png)
+
+
+
+#### [Installation Reference - Ankur Chavda](https://github.com/ankurchavda/streamify/blob/main/setup/airflow.md)

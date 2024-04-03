@@ -59,7 +59,7 @@ The air pollution data obtained from the [OpenWeather API](https://openweatherma
 If you already have a Google Cloud account and a working terraform setup, you can skip the pre-requisite steps.
 
 - Google Cloud Platform: [GCP Account and Access Setup](setup/gcp.md)
-- Terraform: [Setup Terraform](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/week_1_basics_n_setup/1_terraform_gcp/windows.md#terraform)
+- Terraform: [Setup Terraform](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/01-docker-terraform/1_terraform_gcp/windows.md)
 
 
 ### Get Going
