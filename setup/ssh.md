@@ -9,10 +9,10 @@
 - Create a config file in your `.ssh` folder
 
   ```bash
-  touch ~/.ssh/config
+  code ~/.ssh/config
   ```
 
-- Copy the following snippet and replace with External IP of the Kafka, Spark (Master Node), Airflow VMs. Username and path to the ssh private key
+- Copy the following snippet and replace with External IP of the Virtual Machine. Username and path to the ssh private key
 
     ```bash
     Host germany-air-quality-instance
