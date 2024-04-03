@@ -25,7 +25,7 @@ We will setup Mage on docker in a dedicated compute instance. dbt is setup insid
 
 - cd into the Mage directory
   ```bash
-  cd air_pollution_tracking/mage
+  cd ~/air_pollution_tracking/mage
   ```
 - Update `your-open-weather-api-key` (create a free account on [OpenWeather](https://openweathermap.org/) website to have an free API key) and `your-gcs-bucket-name` in the file `dev.env`
   ```env
