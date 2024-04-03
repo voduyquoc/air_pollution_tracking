@@ -45,7 +45,7 @@ sudo chmod +x docker-compose
 echo "Setup .bashrc..."
 echo '' >> ~/.bashrc
 echo 'export PATH=${HOME}/bin:${PATH}' >> ~/.bashrc
-eval "$(cat ~/.bashrc | tail -n +10)" # A hack because source .bashrc doesn't work inside the script
+eval "$(cat ~/.bashrc | tail -n +10)"
 
 echo "docker-compose version..."
 docker-compose --version

@@ -23,11 +23,12 @@ Checkout this [video](https://www.youtube.com/watch?v=Hajwnmj0xfQ&list=PL3MmuxUb
    * bigquery
    * storage
    * compute engine
+   
    ***Note:** If there is an error message, that a billing account is missing for this new project, follow these additional steps:*
-   - Go to the [Google Cloud Platform billing config](https://console.cloud.google.com/billing/projects).
-   - Click on the three dots next to the new project and select "Change billing". 
-   - Choose the billing account and confirm by clicking "Set account".
-   - Execute the shell command above again to enable the APIs.
+   * Go to the [Google Cloud Platform billing config](https://console.cloud.google.com/billing/projects).
+   * Click on the three dots next to the new project and select "Change billing". 
+   * Choose the billing account and confirm by clicking "Set account".
+   * Execute the shell command above again to enable the APIs.
 
 
 
