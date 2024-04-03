@@ -7,7 +7,7 @@ historical_air_pollution:
       location: US
       method: service-account
       priority: interactive
-      project: ny-rides-quocvo
+      project: <gcp-project-id>
       threads: 4
       timeout_seconds: 300
       type: bigquery

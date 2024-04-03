@@ -75,6 +75,18 @@ We will setup Mage on docker in a dedicated compute instance. dbt is setup insid
       database: <gcp-project-id>
       schema: air_pollution
   ```
+- cd into the data_exporter directory
+  ```bash
+  cd ~/air_pollution_tracking/mage/air-pollution-tracking/data_exporters
+  ```
+
+- Update your `gcp-project-id` in the `air_to_bigquery_partitioned_clustered.sql` file
+  ```sql
+  CREATE OR REPLACE TABLE `<gcp-project-id>.air_pollution.air_data_partitioned_clustered`
+      PARTITION BY DATE(recorded_time)
+      CLUSTER BY latitude, longitude AS (
+      SELECT * FROM `<gcp-project-id>.air_pollution.air_data_non_partitioned`);
+  ```
 - cd into the Mage directory again
   ```bash
   cd ~/air_pollution_tracking/mage
@@ -91,6 +103,12 @@ We will setup Mage on docker in a dedicated compute instance. dbt is setup insid
   ```bash
   python trigger.py
   ```
+- Mage will be running in detached mode. To see the logs from docker run the below command
+
+  ```bash
+  docker-compose logs --follow
+  ```
+
 - Mage should be available on port `6789` a couple of minutes after the above setup is complete.
 
 - To stop Mage
@@ -122,5 +140,7 @@ The transformations happen using dbt which is triggered by Mage. The dbt lineage
 Finally, we have `prod` dataset in Google BigQuery to prepare dashboards.
 
 ### Dashboard
+
+[Link to the dashboard](https://lookerstudio.google.com/s/jOxSt_QiToY)
 
 ![img](../images/dashboard.png)
