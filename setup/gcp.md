@@ -17,7 +17,7 @@ Checkout this [video](https://www.youtube.com/watch?v=Hajwnmj0xfQ&list=PL3MmuxUb
 1. [IAM Roles](https://cloud.google.com/storage/docs/access-control/iam-roles) for Service account:
    * Go to the *IAM* section of *IAM & Admin* https://console.cloud.google.com/iam-admin/iam
    * Click the *Edit principal* icon for your service account.
-   * Add these roles in addition to *Viewer* : **Storage Admin** + **BigQuery Admin**
+   * Add these roles in addition to *Viewer* : **Storage Admin** + **BigQuery Admin** + **Compute Admin**
    
 2. Enable these APIs for your project:
    * bigquery
