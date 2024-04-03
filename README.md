@@ -35,7 +35,11 @@ The air pollution data obtained from the [OpenWeather API](https://openweatherma
 
 ### Pipeline
 
-![pipeline](images/pipeline.png)
+<p align="center">
+  <a href="https://mage.ai/">
+    <img src="images/pipeline.png">
+  </a>
+</p>
 
 ### dbt
 
