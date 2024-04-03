@@ -33,6 +33,14 @@ The air pollution data obtained from the [OpenWeather API](https://openweatherma
 
 ![architecture](images/architecture.png)
 
+### Pipeline
+
+![pipeline](images/pipeline.png)
+
+### dbt
+
+![dbt](images/dbt.png)
+
 ### Final Result
 
 [Link to the dashboard](https://lookerstudio.google.com/s/jOxSt_QiToY)
