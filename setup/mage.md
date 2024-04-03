@@ -1,7 +1,5 @@
 ## Setup Mage VM
 
-![airflow](../images/airflow.jpg)
-
 We will setup Mage on docker in a dedicated compute instance. dbt is setup inside Mage.
 
 - Establish SSH connection
