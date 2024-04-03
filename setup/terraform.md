@@ -7,7 +7,7 @@ git clone https://github.com/voduyquoc/air_pollution_tracking.git && \
 cd air_pollution_tracking/terraform
 ```
 
-- You will edit your GCP Project ID in the file `variables.tf`. Use the same values throughout the project. 
+- You will edit your `GCP Project ID`, `gcs_bucket_name` and `Path to your google_credentials.json` in the file `variables.tf`. Use the same values throughout the project. 
 
 - Initiate terraform and download the required dependencies-
 
