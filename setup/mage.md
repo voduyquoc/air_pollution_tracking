@@ -117,6 +117,8 @@ We will setup Mage on docker in a dedicated compute instance. dbt is setup insid
 
 ![img](../images/mage.png)
 
+![img](../images/mage2.png)
+
 - To stop Mage
 
   ```bash
@@ -144,6 +146,12 @@ The transformations happen using dbt which is triggered by Mage. The dbt lineage
 
 
 Finally, we have `prod` dataset in Google BigQuery to prepare dashboards.
+
+<p align="center">
+  <a>
+    <img src="../images/bigquery.png">
+  </a>
+</p>
 
 ### Dashboard
 
