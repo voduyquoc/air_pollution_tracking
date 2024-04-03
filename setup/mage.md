@@ -115,7 +115,11 @@ We will setup Mage on docker in a dedicated compute instance. dbt is setup insid
   - We then create an empty table to which our hourly data will be appended. Usually, this will only ever run in the first run.
   - Finally, run the dbt transformation, to create our dimensions and facts (transforming the data in the data warehouse) to prepare it for the dashboard.
 
-![img](../images/pipeline.png)
+<p align="center">
+  <a>
+    <img src="../images/pipeline.png">
+  </a>
+</p>
 
 ### dbt
 The transformations happen using dbt which is triggered by Mage. The dbt lineage should look something like this -
