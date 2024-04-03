@@ -3,11 +3,13 @@
 Clone the repository in your local machine.
 
 ```bash
-git clone https://github.com/ankurchavda/streamify.git && \
-cd streamify/terraform
+git clone https://github.com/voduyquoc/air_pollution_tracking.git && \
+cd air_pollution_tracking/terraform
 ```
 
 Spin up the Infra -
+
+You will edit your GCP Project ID in the file `variables.tf`. Use the same values throughout the project. 
 
 - Initiate terraform and download the required dependencies-
 
@@ -17,8 +19,6 @@ Spin up the Infra -
 
 - View the Terraform plan
 
-  You will be asked to enter two values, the name of the GCS bucket you want to create and your GCP Project ID. Use the same values throughout the project. 
-
   ```bash
   terraform plan
   ```
@@ -26,15 +26,10 @@ Spin up the Infra -
 - Terraform plan should show the creation of following services -
 
   - `e2-standard-4` Compute Instance for Kafka
-  - `e2-standard-4` Compute Instance for Airflow
-  - Dataproc Spark Cluster
-    - One `e2-standard-2` Master node
-    - Two `e2-medium` Worker nodes
   - A Google Cloud Storage bucket
   - Two Bigquery Datasets
-    - streamify_stg
-    - streamify_prod
-  - Firewall rule to open port `9092` on the Kafka Instance
+    - air_pollution
+    - prod
 
 - Apply the infra. **Note** - Billing will start as soon as the apply is complete.
 
