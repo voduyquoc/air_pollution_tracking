@@ -38,6 +38,11 @@ variable "prod_bq_dataset" {
   default     = "prod"
 }
 
+variable "stg_bq_dataset" {
+  description = "The name of your staging dataset"
+  default     = "air_pollution"
+}
+
 variable "vm_image" {
   description = "Image for you VM"
   default     = "ubuntu-os-cloud/ubuntu-2004-lts"
