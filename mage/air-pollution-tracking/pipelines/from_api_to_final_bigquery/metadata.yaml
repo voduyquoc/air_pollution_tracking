@@ -187,7 +187,7 @@ settings:
 spark_config: {}
 tags: []
 type: python
-updated_at: '2024-04-02 21:16:21'
+updated_at: '2024-04-03 08:08:57'
 uuid: from_api_to_final_bigquery
 variables_dir: /home/src/mage_data/air-pollution-tracking
 widgets: []
