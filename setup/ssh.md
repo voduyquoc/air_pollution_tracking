@@ -27,5 +27,5 @@
     ssh germany-air-quality-instance
     ```
 
-- You will have to forward ports from your VM to your local machine for you to be able to see Kafka, Airflow UI. Check how to do that [here](https://youtu.be/ae-CV2KfoN0?t=1074)
+- You will have to forward ports from your VM to your local machine for you to be able to see Mage UI. Check how to do that [here](https://youtu.be/ae-CV2KfoN0?t=1074)
 
