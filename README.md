@@ -10,7 +10,7 @@ All around the world, especially in Germany, the issue of urban air pollution is
 
 ### Objective
 
-The project will create a data pipeline that processes the air pollution data. The data is retrieved from [OpenWeather API](https://openweathermap.org/api) based on the [list of cities](mage/germany_city.csv) with their latitude and longitude. The data would be processed daily and stored to the data lake. Then the pipeline will consume this data, apply transformations, and create the desired tables for our dashboard to generate analytics.
+The project will create a batch data pipeline that processes the air pollution data. The data is retrieved from [OpenWeather API](https://openweathermap.org/api) based on the [list of cities](mage/germany_city.csv) with their latitude and longitude. The data would be processed daily and stored to the data lake. Then the pipeline will consume this data, apply transformations, and create the desired tables for our dashboard to generate analytics.
 
 ### Dataset
 
@@ -31,7 +31,7 @@ The air pollution data obtained from the [OpenWeather API](https://openweatherma
 
 ### Architecture
 
-![architecture](images/architecture.jpg)
+![architecture](images/architecture.png)
 
 ### Final Result
 
