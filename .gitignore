@@ -34,7 +34,7 @@ override.tf.json
 terraform.rc
 
 *.json
-*.env
+.env
 
 # ide
 .vscode/
