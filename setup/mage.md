@@ -99,6 +99,10 @@ We will setup Mage on docker in a dedicated compute instance. dbt is setup insid
   ```bash
   docker-compose up -d
   ```
+- Forward port `6789` from your Virtual Machine to your local machine for you to be able to trigger pipeline. Check how to do that [here](https://youtu.be/ae-CV2KfoN0?t=1074)
+
+- Mage should be available on port `6789` a couple of minutes after the above setup is complete.
+
 - Run pipeline in Mage. (This shall take a few good minutes!)
   ```bash
   python trigger.py
@@ -109,7 +113,9 @@ We will setup Mage on docker in a dedicated compute instance. dbt is setup insid
   docker-compose logs --follow
   ```
 
-- Mage should be available on port `6789` a couple of minutes after the above setup is complete.
+- Check pipeline running status in Mage UI by accessing port `6789` as below
+
+![img](../images/mage.png)
 
 - To stop Mage
 
